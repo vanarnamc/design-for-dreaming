@@ -202,8 +202,8 @@ section {
 #welcomeText {
   font-family: "SuisseIntl-About";
   text-align: center;
-  color: #000000; /* Adjust color as needed */
-  font-size: 28px;
+  color: #ffffff; /* Adjust color as needed */
+  font-size: 1.5em;
   line-height:1;
   /* Any additional styling you want */
 }
