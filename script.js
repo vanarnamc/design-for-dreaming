@@ -103,8 +103,7 @@ function displayVideoDetections(result) {
 
     // Iterate over each detection result
     result.detections.forEach(detection => {
-        // Adjust for the horizontal flip and scale the coordinates
-        let scaledX = (videoWidth - detection.boundingBox.originX - detection.boundingBox.width) * scaleX + videoContainerMarginLeft;
+        let scaledX = detection.boundingBox.originX * scaleX + videoContainerMarginLeft;
         let scaledY = detection.boundingBox.originY * scaleY + videoContainerMarginTop;
         let scaledWidth = detection.boundingBox.width * scaleX;
         let scaledHeight = detection.boundingBox.height * scaleY;
